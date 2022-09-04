@@ -1,0 +1,65 @@
+.errorMessage{color: red;}
+body {font-family: Arial, Helvetica, sans-serif;}
+h1 {
+    text-align: left;
+    padding-top: 0.4%;
+    color: #60A49C;
+    font-size: 44px;
+    padding-bottom: 5px;
+}
+
+h2 {
+    text-align: left;
+    padding-top: 0.03%;
+    color: black;
+    font-size: 22px;
+    padding-bottom: 1px;
+}
+
+p {
+    text-align: center;
+    padding: auto;
+}
+
+th, td {
+    padding-left: 5px;
+    padding-right: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+table {
+    border-top: 5px solid black;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+body {
+    padding-left: 20px;
+}
+
+
+.add {
+    margin-top: 35px;
+}
+
+span.addA{
+    background-color: #294853;
+    text-decoration: none;
+    color: white;
+    padding: 17px 20px;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    border-radius: 15px;
+    font-size: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a.addA {
+    color: white;
+    text-decoration: none;
+}

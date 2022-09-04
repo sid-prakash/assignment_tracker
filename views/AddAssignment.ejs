@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../StyleSheets/AddAssignments.css">
+        <title>Add Assignment</title>
+        <span class="version">Version 1.0</span>
+    </head>
+    <body>
+        <h1>Add Assignment</h1>
+
+        <form id="formUserDetails" action= "/addassignment" method="POST" >
+            <div class="container">
+                Assignment Name: <br/>
+                <input type="text" name = "aname" required><br/>
+                Class: <br/>
+                <input type="text" name = "aclass" required><br/>
+                Due Date: <br/>
+                <input type="text" name = "dday" required><br/>
+                Due Month: <br/>
+                <input type="text" name = "dmonth" required><br/>
+                Due Year: <br/>
+                <input type="text" name = "dyear" required><br/>
+                <input type="hidden" name="uid" value= <%=uid%> />
+            </div>
+            
+            <div class="btns">
+                <button type="submit">Add</button>
+                <span class="Back"><a class="back" href="/Home">Back</a></span>
+            </div>
+        </form>
+    </body>
+</html>

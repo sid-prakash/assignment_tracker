@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="StyleSheets/Home.css">
+    </head>
+    <body>
+        <h1>
+            Welcome, <%=name%>
+        </h1>
+        <div class="table-data">
+            <h2>Today's Assignments</h2>
+                <table>
+                    <tr>
+                        <th>Class</th>
+                        <th>Assignment</th>
+                        <th>Year</th>
+                        <th>Month</th>
+                        <th>Day</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                    
+                    <%
+                    if(userData.length!=0){
+                    var i=1;
+                    userData.forEach(function(data){
+                    %>
+                    <tr>
+                        <td><%=data.class %></td>
+                        <td><%=data.aname %></td>
+                        <td><%=data.dyear %></td>
+                        <td><%=data.dmonth %></td>
+                        <td><%=data.dday %></td>
+                        <% 
+                        var s = "/edit/?aid=" + data.aid + "&aname=" + data.aname + "&aclass=" + data.class + "&dday=" + data.dday + "&dmonth=" + data.dmonth+ "&dyear=" + data.dyear + "&uid=" + data.UserID;
+                        s.replaceAll(' ', '-');
+                        %>
+                        <td><a href="<%=s.replaceAll(' ', '-');%>">Edit</a></td>
+                        <td>
+                            <form id="formUserDetails" action= "/delete" method="POST" >
+                                <a href="/delete" action= "/delete" method="POST">Delete</a>
+                            </form>
+                        </td>
+                    </tr>
+                    <%  i++; }) %>
+                    <% } else{ %>
+                        <tr>
+                            <td colspan="7">No Data Found</td>
+                        </tr>
+                    <% } %>
+                </table>
+        </div>
+        <div class="add">
+            <span class="addA"><a class="addA" href="/AddAssignments/?uid=<%=uid%>">Add Assignment</a></span>
+        </div>
+    </body>
+</html>

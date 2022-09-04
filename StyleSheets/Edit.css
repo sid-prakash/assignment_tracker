@@ -1,0 +1,80 @@
+.errorMessage{color: red;}
+body {font-family: Arial, Helvetica, sans-serif;}
+h1 {
+    text-align: left;
+    padding-top: 0.4%;
+    color: #60A49C;
+    font-size: 35px;
+    padding-bottom: 5px;
+}
+
+.container {
+    padding-left: 5px;
+    padding-right: 10px;
+    border-bottom: 0px solid #ddd;
+    text-align: left;
+    border-left: 0px solid #ddd;
+    border-right: 0px solid #ddd;
+}
+
+
+
+input {
+    text-align: left;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: black;
+    font-size: 16px;  
+    padding-left: 8px; 
+    padding-top: 5px;    
+    padding-bottom: 3px;      
+}
+
+span.Back{
+    background-color: #294853;
+    text-decoration: none;
+    color: white;
+    padding: 17px 20px;
+    margin: 25px 20px;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    border-radius: 15px;
+    font-size: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a.back {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+body {
+    padding-left: 20px;
+}
+
+button {
+    background-color: #294853;
+    color: white;
+    padding: 17px 20px;
+    margin: 10px 5px;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    border-radius: 15px;
+    font-size: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+span.version {
+    float: none;
+    padding: 3px;
+    font-size: 11px;
+}

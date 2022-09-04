@@ -1,0 +1,42 @@
+<!--
+    Siddharthan Prakash
+    3/30/2022
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../StyleSheets/CreateUser.css">
+        <title>Assignment Tracker - Sign up</title>
+        <span class="version">Version 1.0</span>
+    </head>
+    <body>
+        <h1>Sign up</h1>
+        <% if (usc) { %>
+            <div class="alert">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                User was successfully created!
+            </div> 
+            <%}%>
+        
+
+        <form id="formUserDetails" action= "/add" method="POST" >
+            <div class="container">
+                <input type="text" placeholder="Enter First Name" name="fname" id="Name" required><br/>
+                <input type="text" placeholder="Enter Last Name" name="lname" id="LName" required><br/>
+                <input type="text" placeholder="Enter Email" name="username" id="Email" required><br/>
+                <input type="password" placeholder="Enter Password" name="phash" id="pwd" minlength="8" required><br/>
+                <input type="password" placeholder="Confirm Password" name="phash" id="confPwd" minlength="8" required><br/>
+            </div>
+            
+            <div class="container">
+                <button type="submit" name="creatUsr" onclick="return Validate()">Sign Up</button><br \>
+                <span class="Back"><a href="/">Back</a></span>
+            </div>
+        </form>
+
+        <script src="../Scripts/CreateUser.js"></script>
+    </body>
+    
+</html>

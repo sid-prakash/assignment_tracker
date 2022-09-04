@@ -1,0 +1,40 @@
+<!--
+    Om Shukla
+    3/26/2022
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../StyleSheets/Login.css">
+        <script src="Scripts/Login.js"></script>
+        <title>Assignment Tracker - Sign in</title>
+        <span class="version">Version 1.0</span>
+    </head>
+    <body>
+        <h1>Sign in</h1>
+        <p>Enter your email and password below.</p>
+
+        <form id="formUserDetails" action= "/login" method="POST" > <!--action="../assignment-tracker/Home.html" method="GET"-->
+            <div class="container">
+                <input type="text" placeholder="Enter Email" name="Email" id="Email" required><br/>
+                <input type="password" placeholder="Enter Password" name="psw" id="pwd" minlength="8" required><br/>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+            
+            <div class="container">
+
+                <button type="submit" id="sb" name="login" onclick="Validate()">Login</button>
+
+            </div>
+            <div class="container">
+                <span class="psw"><a href="#">Forgot password?</a></span> <br> <br>
+                <span class="psw"><a href="/CreateUser">New here? Click here to create an account</a></span>
+            </div>
+        </form>
+        
+    </body>
+</html>

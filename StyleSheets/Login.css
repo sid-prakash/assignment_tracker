@@ -1,0 +1,90 @@
+/*
+    Om Shukla
+    3/27/2022
+*/
+.errorMessage{color: red;}
+body {font-family: Arial, Helvetica, sans-serif;}
+form {
+    border: 3px solid white;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 10%;
+    color: #60A49C;
+    font-size: 44px;
+    padding-bottom: 20px;
+}   
+
+p {
+    text-align: center;
+    padding: auto;
+}
+
+input[type=text], input[type=password] {
+    width: 469px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: #60A49C;
+    color: white;
+    font-size: 16px;            
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: white;
+}
+
+::-ms-input-placeholder {
+    color: white;
+}
+
+button {
+    background-color: #294853;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 469px;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: none;
+    padding-top: 8px;
+}
+
+span.version {
+    float: none;
+    padding: 3px;
+    font-size: 11px;
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+}

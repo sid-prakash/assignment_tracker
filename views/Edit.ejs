@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <span class="version">Version 1.0</span>
+        <link rel="stylesheet" href="/StyleSheets/Edit.css">
+    </head>
+    <body>
+        <h1>Edit Assignment</h1>
+        
+
+        <form id="formeditassignment" action= "/updateA" method="POST" >
+            <div class="container">
+                Assignment Name: <br/>
+                <input type="text" name = "aname" value = <%=aname%> required><br/>
+                Class: <br/>
+                <input type="text" name = "aclass" value = <%=aclass%> required><br/>
+                Due Date: <br/>
+                <input type="text" name = "dday" value = <%=dday%> required><br/>
+                Due Month: <br/>
+                <input type="text" name = "dmonth" value = <%=dmonth%> required><br/>
+                Due Year: <br/>
+                <input type="text" name = "dyear" value = <%=dyear%> required><br/>
+                <input type="hidden" name="aid" value= <%=aid%> />
+                <input type="hidden" name="uid" value= <%=uid%> />
+            </div>
+            
+            <div class="btns">
+                <button type="submit">Update</button>
+                <span class="Back"><a class="back" href="/Home">Back</a></span>
+            </div>
+        </form>
+
+    </body>
+    
+</html>

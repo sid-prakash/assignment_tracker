@@ -1,0 +1,17 @@
+#Names a server and declares the listening port
+server{
+    listen 80 default_server;
+    server_name coms-319-gp27.class.las.iastate.edu;
+    location / {
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header Host $http_host;
+        proxy_pass http://127.0.0.1:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        # location /overview {
+        #     proxy_pass http://127.0.0.1:3000$request_uri;
+        #     proxy_redirect off;
+        # }
+    }
+}
